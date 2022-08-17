@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GameView: View {
     var body: some View {
-        LinearGradient(colors: [.black, Color("cyan"), Color("white")], startPoint: .topTrailing, endPoint: .bottomLeading).edgesIgnoringSafeArea(.all)
+        LinearGradient(colors: [.black, Color("dark_blue"), Color("dark_cyan")], startPoint: .topTrailing, endPoint: .bottomLeading).edgesIgnoringSafeArea(.all)
     }
 }
 
