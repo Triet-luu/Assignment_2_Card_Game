@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct LeaderboardView: View {
-    var rules: GameRules
     
     var body: some View {
         ZStack {
@@ -17,11 +16,21 @@ struct LeaderboardView: View {
                 Image("rmit-casino-small-logo")
                     .resizable()
                     .scaledToFit()
-                Text(rules.name)
+                Text("Leaderboard")
                     .font(.system(size: 50))
                     .foregroundColor(Color("blue"))
+                HStack {
+                    Text("Name")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color("bright_blue"))
+                        .padding(30)
+                    Text("Point")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color("bright_blue"))
+                        .padding(30)
+                }
+                
                 Spacer()
-            Spacer()
             }
         }
     }
@@ -29,6 +38,7 @@ struct LeaderboardView: View {
 
 struct LeaderboardView_Previews: PreviewProvider {
     static var previews: some View {
-        LeaderboardView(rules: RulesDetails[0])
+        LeaderboardView()
+            .previewInterfaceOrientation(.portrait)
     }
 }

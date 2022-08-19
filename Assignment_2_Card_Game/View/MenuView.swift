@@ -19,7 +19,7 @@ struct MenuView: View {
                 Image("rmit-casino-small-logo")
                     .resizable()
                     .scaledToFit()
-                Text("Welcome to \ncharity machine")
+                Text("   Welcome to \ncharity machine")
                     .font(.system(size: 30))
                     .foregroundColor(Color("blue"))
                 Spacer()
@@ -50,5 +50,6 @@ struct MenuView: View {
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
         MenuView()
+            .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }

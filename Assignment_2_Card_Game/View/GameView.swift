@@ -18,29 +18,23 @@ struct GameView: View {
                 Image("rmit-casino-small-logo")
                     .resizable()
                     .scaledToFit()
-                Text("Welcome to \ncharity machine")
-                    .font(.system(size: 30))
+                Text("Player 2")
+                    .font(.system(size: 40))
+                    .foregroundColor(Color("red"))
+                Spacer()
+                HStack {
+                    Text("Deck")
+                        .frame(width: 40, height: 50)
+                        .padding()
+                    Text("Table")
+                        .frame(width: 50, height:50)
+                        .padding(90)
+                }
+                Spacer()
+                Text("Player 1")
+                    .font(.system(size: 40))
                     .foregroundColor(Color("blue"))
                 Spacer()
-                Button(action: {
-                    deal = false
-                }, label: {
-                    Text("Play")
-                        .font(.system(size: 40))
-                })
-                .frame(width: 80, height: 50)
-                .foregroundColor(Color("light_blue"))
-                .background(.black)
-                Button(action: {
-                    deal = false
-                }, label: {
-                    Text("How to play")
-                        .font(.system(size: 35))
-                })
-                .frame(width: 190, height: 50)
-                .foregroundColor(Color("light_blue"))
-                .background(.black)
-            Spacer()
             }
         }
     }
@@ -49,6 +43,6 @@ struct GameView: View {
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
         GameView()
-            .previewInterfaceOrientation(.portraitUpsideDown)
+            .previewInterfaceOrientation(.portrait)
     }
 }
