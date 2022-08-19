@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct LeaderboardView: View {
+    var rules: GameRules
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            LinearGradient(colors: [.black, Color("dark_blue"), Color("dark_cyan")], startPoint: .topTrailing, endPoint: .bottomLeading).edgesIgnoringSafeArea(.all)
+            VStack {
+                Image("rmit-casino-small-logo")
+                    .resizable()
+                    .scaledToFit()
+                Text(rules.name)
+                    .font(.system(size: 50))
+                    .foregroundColor(Color("blue"))
+                Spacer()
+            Spacer()
+            }
+        }
     }
 }
 
 struct LeaderboardView_Previews: PreviewProvider {
     static var previews: some View {
-        LeaderboardView()
+        LeaderboardView(rules: RulesDetails[0])
     }
 }
