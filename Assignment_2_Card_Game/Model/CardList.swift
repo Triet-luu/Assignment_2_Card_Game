@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-let cardType = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Ace", "Jack", "Queen", "King", "Joker"]
+let cardType = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Ace", "Jack", "Queen", "King", "Joker", "back"]
 let ACE_OF_CLUBS = "ace_of_clubs"
 let ACE_OF_DIAMONDS = "ace_of_diamonds"
 let ACE_OF_HEARTS = "ace_of_hearts"
@@ -62,6 +62,7 @@ let KING_OF_DIAMONDS = "king_of_diamonds2"
 let KING_OF_HEARTS = "king_of_hearts2"
 let KING_OF_SPADES = "king_of_spades2"
 let JOKER = "black_joker"
+let BACK = "back"
 
 
 var details: [CardDetails] = [
@@ -118,4 +119,5 @@ var details: [CardDetails] = [
     CardDetails(name: KING_OF_HEARTS, type: cardType[12]),
     CardDetails(name: KING_OF_SPADES, type: cardType[12]),
     CardDetails(name: JOKER, type: cardType[13]),
+    CardDetails(name: BACK, type: cardType[14])
 ]

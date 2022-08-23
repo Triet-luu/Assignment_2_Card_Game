@@ -13,7 +13,6 @@ struct HowToPlayView: View {
     var body: some View {
         ScrollView {
             ZStack {
-                
                 LinearGradient(colors: [.black, Color("dark_blue"), Color("dark_cyan")], startPoint: .topTrailing, endPoint: .bottomLeading).edgesIgnoringSafeArea(.all)
                 VStack {
                     Image("rmit-casino-small-logo")
@@ -26,7 +25,6 @@ struct HowToPlayView: View {
                         .font(.system(size: 20))
                         .padding(8)
                         .foregroundColor(Color("bright_blue"))
-                    Spacer()
                 }
             }
         }
