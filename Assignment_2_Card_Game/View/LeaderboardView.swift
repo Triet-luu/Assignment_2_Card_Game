@@ -33,7 +33,8 @@ struct LeaderboardView: View {
 //                        ForEach(playerdetails) { playerdetails.username in
 //                            Player(username: playerdetails.username)
 //                        }
-//                    }
+                        
+                    }
                     
                     VStack {
                         Text("Point")
