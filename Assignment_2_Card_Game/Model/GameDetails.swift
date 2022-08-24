@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-var ruledetails: [Player] = [
+var playerdetails: [Player] = [
     Player(player: 1, username: "A", overallpoint: 0, currentpoint: 0),
     Player(player: 2, username: "B", overallpoint: 0, currentpoint: 0)
 ]

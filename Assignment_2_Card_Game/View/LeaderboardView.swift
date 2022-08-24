@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LeaderboardView: View {
+    var playerdetails: Player
     
     var body: some View {
         ZStack {
@@ -20,14 +21,36 @@ struct LeaderboardView: View {
                     .font(.system(size: 50))
                     .foregroundColor(Color("blue"))
                 HStack {
-                    Text("Name")
-                        .font(.system(size: 25))
-                        .foregroundColor(Color("bright_blue"))
-                        .padding(30)
-                    Text("Point")
-                        .font(.system(size: 25))
-                        .foregroundColor(Color("bright_blue"))
-                        .padding(30)
+                    VStack {
+                        Text("Name")
+                            .font(.system(size: 25))
+                            .foregroundColor(Color("bright_blue"))
+                            .padding(30)
+                        Text(playerdetails.username)
+                            .font(.system(size: 25))
+                            .foregroundColor(Color("bright_blue"))
+                            .padding(30)
+//                        ForEach(playerdetails) { playerdetails.username in
+//                            Player(username: playerdetails.username)
+//                        }
+//                    }
+                    
+                    VStack {
+                        Text("Point")
+                            .font(.system(size: 25))
+                            .foregroundColor(Color("bright_blue"))
+                            .padding(30)
+                        Text("\(playerdetails.overallpoint)")
+                            .font(.system(size: 25))
+                            .foregroundColor(Color("bright_blue"))
+                            .padding(30)
+                        Text("\(playerdetails.overallpoint)")
+                            .font(.system(size: 25))
+                            .foregroundColor(Color("bright_blue"))
+                            .padding(30)
+                    }
+                    
+                    
                 }
                 
                 Spacer()
@@ -38,7 +61,7 @@ struct LeaderboardView: View {
 
 struct LeaderboardView_Previews: PreviewProvider {
     static var previews: some View {
-        LeaderboardView()
+        LeaderboardView(playerdetails: playerdetails[0])
             .previewInterfaceOrientation(.portrait)
     }
 }
