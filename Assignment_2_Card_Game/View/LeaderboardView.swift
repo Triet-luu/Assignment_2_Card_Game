@@ -26,14 +26,14 @@ struct LeaderboardView: View {
                             .font(.system(size: 25))
                             .foregroundColor(Color("bright_blue"))
                             .padding(30)
-                        Text(playerdetails.username)
+                        Text(playerdetails.username1)
                             .font(.system(size: 25))
                             .foregroundColor(Color("bright_blue"))
                             .padding(30)
-//                        ForEach(playerdetails) { playerdetails.username in
-//                            Player(username: playerdetails.username)
-//                        }
-                        
+                        Text(playerdetails.username2)
+                            .font(.system(size: 25))
+                            .foregroundColor(Color("bright_blue"))
+                            .padding(30)
                     }
                     
                     VStack {
@@ -41,17 +41,15 @@ struct LeaderboardView: View {
                             .font(.system(size: 25))
                             .foregroundColor(Color("bright_blue"))
                             .padding(30)
-                        Text("\(playerdetails.overallpoint)")
+                        Text("\(playerdetails.overallpoint1)")
                             .font(.system(size: 25))
                             .foregroundColor(Color("bright_blue"))
                             .padding(30)
-                        Text("\(playerdetails.overallpoint)")
+                        Text("\(playerdetails.overallpoint2)")
                             .font(.system(size: 25))
                             .foregroundColor(Color("bright_blue"))
                             .padding(30)
                     }
-                    
-                    
                 }
                 
                 Spacer()

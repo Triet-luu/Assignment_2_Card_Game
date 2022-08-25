@@ -15,11 +15,14 @@ struct CardDetails: Identifiable {
     var image: Image {
         Image(name)
     }
-    var type: String
+    var rank: Rank
+    var type: Suit
     
-    init(id: UUID = UUID(), name: String, type: String) {
-        self.id = id
-        self.name = name
-        self.type = type
+    enum Rank {
+        case THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE, TWO, JOKER
+    }
+    
+    enum Suit {
+        case CLUBS, SPADES, HEARTS, DIAMONDS
     }
 }

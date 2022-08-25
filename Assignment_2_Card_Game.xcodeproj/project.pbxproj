@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC1F78CF28B7683900770637 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F78CE28B7683900770637 /* CardView.swift */; };
 		EC5CE55528AF7C40000970A1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CE55428AF7C40000970A1 /* Player.swift */; };
 		EC5CE55728AF7E5F000970A1 /* GameDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CE55628AF7E5F000970A1 /* GameDetails.swift */; };
 		EC5CE55928AF81D3000970A1 /* GameRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CE55828AF81D3000970A1 /* GameRules.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC1F78CE28B7683900770637 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		EC5CE55428AF7C40000970A1 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		EC5CE55628AF7E5F000970A1 /* GameDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetails.swift; sourceTree = "<group>"; };
 		EC5CE55828AF81D3000970A1 /* GameRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRules.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				EC76C60328AC986D004BE280 /* MenuView.swift */,
 				EC76C60528AC987F004BE280 /* LeaderboardView.swift */,
 				EC76C60728AC988E004BE280 /* HowToPlayView.swift */,
+				EC1F78CE28B7683900770637 /* CardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				EC76C60428AC986D004BE280 /* MenuView.swift in Sources */,
 				EC5CE55528AF7C40000970A1 /* Player.swift in Sources */,
 				EC76C5EE28AC8467004BE280 /* Assignment_2_Card_GameApp.swift in Sources */,
+				EC1F78CF28B7683900770637 /* CardView.swift in Sources */,
 				EC5CE55928AF81D3000970A1 /* GameRules.swift in Sources */,
 				EC76C60628AC987F004BE280 /* LeaderboardView.swift in Sources */,
 				EC76C60028AC8C8A004BE280 /* CardList.swift in Sources */,
