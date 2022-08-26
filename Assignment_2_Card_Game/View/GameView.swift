@@ -38,7 +38,7 @@ struct GameView: View {
                 }
                 Spacer()
                 Text("Player \(player.player1)")
-                    .font(.system(size: 25))
+                    .font(.system(size: 20))
                     .foregroundColor(Color("green"))
                 ScrollView(.horizontal) {
                     HStack {

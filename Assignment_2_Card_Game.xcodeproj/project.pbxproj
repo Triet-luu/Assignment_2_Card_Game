@@ -22,6 +22,7 @@
 		EC76C60428AC986D004BE280 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76C60328AC986D004BE280 /* MenuView.swift */; };
 		EC76C60628AC987F004BE280 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76C60528AC987F004BE280 /* LeaderboardView.swift */; };
 		EC76C60828AC988E004BE280 /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76C60728AC988E004BE280 /* HowToPlayView.swift */; };
+		EC8185D328B8CA0400115B09 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8185D228B8CA0400115B09 /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		EC76C60328AC986D004BE280 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		EC76C60528AC987F004BE280 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		EC76C60728AC988E004BE280 /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
+		EC8185D228B8CA0400115B09 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				EC5CE55628AF7E5F000970A1 /* GameDetails.swift */,
 				EC5CE55828AF81D3000970A1 /* GameRules.swift */,
 				EC5CE55A28AF8322000970A1 /* RulesDetails.swift */,
+				EC8185D228B8CA0400115B09 /* Deck.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				EC76C60828AC988E004BE280 /* HowToPlayView.swift in Sources */,
 				EC5CE55B28AF8322000970A1 /* RulesDetails.swift in Sources */,
 				EC76C5F028AC8467004BE280 /* ContentView.swift in Sources */,
+				EC8185D328B8CA0400115B09 /* Deck.swift in Sources */,
 				EC76C60428AC986D004BE280 /* MenuView.swift in Sources */,
 				EC5CE55528AF7C40000970A1 /* Player.swift in Sources */,
 				EC76C5EE28AC8467004BE280 /* Assignment_2_Card_GameApp.swift in Sources */,

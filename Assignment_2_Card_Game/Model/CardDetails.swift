@@ -16,13 +16,13 @@ struct CardDetails: Identifiable {
         Image(name)
     }
     var rank: Rank
-    var type: Suit
+    var suit: Suit
     
-    enum Rank {
+    enum Rank: CaseIterable {
         case THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE, TWO, JOKER
     }
     
-    enum Suit {
+    enum Suit: CaseIterable {
         case CLUBS, SPADES, HEARTS, DIAMONDS
     }
 }

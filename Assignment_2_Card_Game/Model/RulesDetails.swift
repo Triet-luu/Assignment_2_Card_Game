@@ -8,6 +8,7 @@
   Created  date: dd/mm/yyyy (e.g. 31/07/2022)
   Last modified: dd/mm/yyyy (e.g. 05/08/2022)
   Acknowledgement: https://bicyclecards.com/how-to-play/old-maid/
+ https://github.com/lcs-jliu/OldMaid/blob/master/OldMaid/main.swift
 */
 
 import Foundation
