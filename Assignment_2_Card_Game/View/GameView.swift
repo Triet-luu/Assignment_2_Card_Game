@@ -13,6 +13,7 @@ struct GameView: View {
     var card: CardDetails
     var player: Player
     
+    
     var body: some View {
         ZStack {
             LinearGradient(colors: [.black, Color("dark_blue"), Color("dark_cyan")], startPoint: .topTrailing, endPoint: .bottomLeading).edgesIgnoringSafeArea(.all)

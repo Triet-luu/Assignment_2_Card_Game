@@ -18,11 +18,4 @@ struct CardDetails: Identifiable {
     var rank: Rank
     var suit: Suit
     
-    enum Rank: CaseIterable {
-        case THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE, TWO, JOKER
-    }
-    
-    enum Suit: CaseIterable {
-        case CLUBS, SPADES, HEARTS, DIAMONDS
-    }
 }
