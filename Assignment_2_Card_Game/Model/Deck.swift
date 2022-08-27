@@ -17,4 +17,8 @@ struct Deck {
             }
         }
     }
+    
+    mutating func shuffle() {
+        cards.shuffle()
+    }
 }
