@@ -21,4 +21,12 @@ struct Deck {
     mutating func shuffle() {
         cards.shuffle()
     }
+    
+    mutating func drawCard() -> CardDetails {
+        return cards.removeLast()
+    }
+    
+    func remainingCards() -> Int {
+        return cards.count
+    }
 }

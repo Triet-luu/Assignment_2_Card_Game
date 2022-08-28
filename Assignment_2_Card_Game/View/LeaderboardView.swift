@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct LeaderboardView: View {
-    var playerdetails: Player
+    var playerdetails = [
+        Player(player: 1, username: "A", overallpoint: 0, currentpoint: 0),
+        Player(player: 2, username: "B", overallpoint: 0, currentpoint: 0)
+    ]
+//    var playerdetails: Player
     
     var body: some View {
         ZStack {
@@ -26,11 +30,11 @@ struct LeaderboardView: View {
                             .font(.system(size: 25))
                             .foregroundColor(Color("bright_blue"))
                             .padding(30)
-                        Text(playerdetails.username1)
+                        Text("\(playerdetails[0].username)")
                             .font(.system(size: 25))
                             .foregroundColor(Color("bright_blue"))
                             .padding(30)
-                        Text(playerdetails.username2)
+                        Text("\(playerdetails[1].username)")
                             .font(.system(size: 25))
                             .foregroundColor(Color("bright_blue"))
                             .padding(30)
@@ -41,11 +45,11 @@ struct LeaderboardView: View {
                             .font(.system(size: 25))
                             .foregroundColor(Color("bright_blue"))
                             .padding(30)
-                        Text("\(playerdetails.overallpoint1)")
+                        Text("\(playerdetails[0].overallpoint)")
                             .font(.system(size: 25))
                             .foregroundColor(Color("bright_blue"))
                             .padding(30)
-                        Text("\(playerdetails.overallpoint2)")
+                        Text("\(playerdetails[1].overallpoint)")
                             .font(.system(size: 25))
                             .foregroundColor(Color("bright_blue"))
                             .padding(30)
@@ -60,7 +64,7 @@ struct LeaderboardView: View {
 
 struct LeaderboardView_Previews: PreviewProvider {
     static var previews: some View {
-        LeaderboardView(playerdetails: playerdetails[0])
+        LeaderboardView(playerdetails: playerdetails)
             .previewInterfaceOrientation(.portrait)
     }
 }

@@ -25,6 +25,7 @@
 		EC76C60428AC986D004BE280 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76C60328AC986D004BE280 /* MenuView.swift */; };
 		EC76C60628AC987F004BE280 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76C60528AC987F004BE280 /* LeaderboardView.swift */; };
 		EC76C60828AC988E004BE280 /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76C60728AC988E004BE280 /* HowToPlayView.swift */; };
+		EC95F8FF28BB37D400DF0C49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC95F8FE28BB37D400DF0C49 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		EC76C60328AC986D004BE280 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		EC76C60528AC987F004BE280 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		EC76C60728AC988E004BE280 /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
+		EC95F8FE28BB37D400DF0C49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				EC61F90728B9D79400825D47 /* Suit.swift */,
 				EC61F90928B9D7C500825D47 /* Rank.swift */,
 				EC61F90B28B9D82A00825D47 /* Deck.swift */,
+				EC95F8FE28BB37D400DF0C49 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				EC76C5F028AC8467004BE280 /* ContentView.swift in Sources */,
 				EC76C60428AC986D004BE280 /* MenuView.swift in Sources */,
 				EC5CE55528AF7C40000970A1 /* Player.swift in Sources */,
+				EC95F8FF28BB37D400DF0C49 /* User.swift in Sources */,
 				EC61F90828B9D79400825D47 /* Suit.swift in Sources */,
 				EC76C5EE28AC8467004BE280 /* Assignment_2_Card_GameApp.swift in Sources */,
 				EC1F78CF28B7683900770637 /* CardView.swift in Sources */,

@@ -7,18 +7,54 @@
 
 import SwiftUI
 
+struct Interaction {
+    private(set) var players: [User]
+    
+    init() {
+        let bot = [
+            User()
+        ]
+        players = bot
+        players.append(User(isPlayer: true))
+        
+        var deck = Deck()
+        deck.createDeck()
+        deck.shuffle()
+        
+        let randomStartingPlayer = Int(arc4random()) % players.count
+        
+        while deck.remainingCards() > 0 {
+            for i in randomStartingPlayer...randomStartingPlayer + (players.count - 1) {
+                let x = i % players.count
+                let card = deck.drawCard()
+                players[x].cards.append(card)
+            }
+        }
+    }
+}
+
+var duelPlayers = [
+    User(),
+    User(isPlayer: true)
+]
+
 struct GameView: View {
     @State private var deal: Bool = true
     
+    var function = Interaction()
     var card: CardDetails
     var player: Player
-    
+        
+    var playerdetails = [
+        Player(player: 1, username: "A", overallpoint: 0, currentpoint: 0),
+        Player(player: 2, username: "B", overallpoint: 0, currentpoint: 0)
+    ]
     
     var body: some View {
         ZStack {
             LinearGradient(colors: [.black, Color("dark_blue"), Color("dark_cyan")], startPoint: .topTrailing, endPoint: .bottomLeading).edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Player \(player.player2)")
+                Text("Player \(playerdetails[1].player)")
                     .font(.system(size: 20))
                     .foregroundColor(Color("red"))
                 ScrollView(.horizontal) {
@@ -38,7 +74,7 @@ struct GameView: View {
                         .padding(90)
                 }
                 Spacer()
-                Text("Player \(player.player1)")
+                Text("Player \(playerdetails[0].player)")
                     .font(.system(size: 20))
                     .foregroundColor(Color("green"))
                 ScrollView(.horizontal) {
