@@ -33,7 +33,7 @@ struct MenuView: View {
                 .foregroundColor(Color("light_blue"))
                 .background(.black)
                 .sheet(isPresented: $play) {
-                    GameView(card: cardsInformation[0], player: playerdetails[0])
+                    GameView()
                 }
                 Button(action: {
                     how = true

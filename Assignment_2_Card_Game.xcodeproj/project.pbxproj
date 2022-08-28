@@ -26,6 +26,7 @@
 		EC76C60628AC987F004BE280 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76C60528AC987F004BE280 /* LeaderboardView.swift */; };
 		EC76C60828AC988E004BE280 /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76C60728AC988E004BE280 /* HowToPlayView.swift */; };
 		EC95F8FF28BB37D400DF0C49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC95F8FE28BB37D400DF0C49 /* User.swift */; };
+		EC95F90128BB58C100DF0C49 /* OldMaidControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC95F90028BB58C100DF0C49 /* OldMaidControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		EC76C60528AC987F004BE280 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		EC76C60728AC988E004BE280 /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
 		EC95F8FE28BB37D400DF0C49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EC95F90028BB58C100DF0C49 /* OldMaidControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldMaidControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				EC76C60528AC987F004BE280 /* LeaderboardView.swift */,
 				EC76C60728AC988E004BE280 /* HowToPlayView.swift */,
 				EC1F78CE28B7683900770637 /* CardView.swift */,
+				EC95F90028BB58C100DF0C49 /* OldMaidControl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			files = (
 				EC5CE55728AF7E5F000970A1 /* GameDetails.swift in Sources */,
 				EC76C60828AC988E004BE280 /* HowToPlayView.swift in Sources */,
+				EC95F90128BB58C100DF0C49 /* OldMaidControl.swift in Sources */,
 				EC5CE55B28AF8322000970A1 /* RulesDetails.swift in Sources */,
 				EC61F90A28B9D7C500825D47 /* Rank.swift in Sources */,
 				EC76C5F028AC8467004BE280 /* ContentView.swift in Sources */,

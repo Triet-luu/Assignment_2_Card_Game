@@ -41,57 +41,75 @@ var duelPlayers = [
 struct GameView: View {
     @State private var deal: Bool = true
     
-    var function = Interaction()
-    var card: CardDetails
-    var player: Player
+    var oldmaid = OldMaidControl()
+    
+    @State private var playerHand = [Int](repeating: 0, count: 27)
+    @State private var botHand: [Int] = [0, 1]
         
     var playerdetails = [
         Player(player: 1, username: "A", overallpoint: 0, currentpoint: 0),
         Player(player: 2, username: "B", overallpoint: 0, currentpoint: 0)
     ]
     
+    func drawCard() {
+        playerHand = playerHand.map({ _ in
+            Int.random(in: 0...53-1)
+        })
+        botHand = botHand.map({ _ in
+            Int.random(in: 0...53-1)
+        })
+    }
+    
     var body: some View {
         ZStack {
             LinearGradient(colors: [.black, Color("dark_blue"), Color("dark_cyan")], startPoint: .topTrailing, endPoint: .bottomLeading).edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Player \(playerdetails[1].player)")
-                    .font(.system(size: 20))
-                    .foregroundColor(Color("red"))
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach (cardsInformation) { card in CardView(cardName: BACK)
+                ForEach(oldmaid.players) { player in
+                    if !player.isPlayer {
+                        Text("Player \(playerdetails[1].player)")
+                            .font(.system(size: 20))
+                            .foregroundColor(Color("red"))
+                        ScrollView(.horizontal) {
+                            HStack {
+                                ForEach (player.cards) {
+                                    card in CardView(cardName: BACK)
+                                }
+                            }
                         }
-                    }
-                }
-                Spacer()
-                HStack {
-                    Image(BACK)
-                        .resizable()
-                        .frame(width: 50, height: 70, alignment: .bottomLeading)
-                        .padding(5)
-                    Text("Table")
-                        .frame(width: 50, height:50)
-                        .padding(90)
-                }
-                Spacer()
-                Text("Player \(playerdetails[0].player)")
-                    .font(.system(size: 20))
-                    .foregroundColor(Color("green"))
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach (cardsInformation) { card in CardView(cardName: card.name)
+                    } else {
+                        Spacer()
+                        HStack {
+                            Image(BACK)
+                                .resizable()
+                                .frame(width: 50, height: 70, alignment: .bottomLeading)
+                                .padding(5)
+                            Text("Table")
+                                .frame(width: 50, height:50)
+                                .padding(90)
+                        }
+                        Spacer()
+                        Text("Player \(playerdetails[0].player)")
+                            .font(.system(size: 20))
+                            .foregroundColor(Color("green"))
+                        ScrollView(.horizontal) {
+                            HStack {
+                                ForEach (playerHand, id: \.self) { card in
+                                    CardView(cardName: cardsInformation[card].name)
+                                }
+                            }
                         }
                     }
                 }
                 Spacer()
             }
         }
+        .onAppear{drawCard()}
     }
 }
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView(card: cardsInformation[0], player: playerdetails[0])
+        GameView()
             .previewInterfaceOrientation(.portrait)
     }
 }

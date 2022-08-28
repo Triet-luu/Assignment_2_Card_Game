@@ -63,7 +63,7 @@ let KING_OF_SPADES = "king_of_spades2"
 let JOKER = "black_joker"
 let BACK = "back"
 
-let cardsInformation: [CardDetails] = [
+var cardsInformation: [CardDetails] = [
     CardDetails(name: ACE_OF_CLUBS, rank: .ACE, suit: .CLUBS),
     CardDetails(name: ACE_OF_DIAMONDS, rank: .ACE, suit: .DIAMONDS),
     CardDetails(name: ACE_OF_HEARTS, rank: .ACE, suit: .HEARTS),
