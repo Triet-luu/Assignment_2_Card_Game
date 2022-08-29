@@ -13,5 +13,7 @@ struct User: Identifiable {
     
     var cards = Stack()
     var id = UUID()
+    var playerName = ""
     var isPlayer = false
+    var activePlayer = false
 }
