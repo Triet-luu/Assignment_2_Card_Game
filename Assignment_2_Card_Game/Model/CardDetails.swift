@@ -1,9 +1,15 @@
-//
-//  SwiftUIView.swift
-//  Assignment_2_Card_Game
-//
-//  Created by Triet, Luu Huynh on 17/08/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 2
+  Author: Luu Huynh Triet
+  ID: s3594528
+  Created  date: 17/08/2022
+  Last modified: 29/08/2022
+  Acknowledgement: https://bicyclecards.com/how-to-play/old-maid/
+ https://github.com/lcs-jliu/OldMaid/blob/master/OldMaid/main.swift
+*/
 
 import Foundation
 import SwiftUI
