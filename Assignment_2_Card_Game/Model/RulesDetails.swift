@@ -3,10 +3,10 @@
   Course: COSC2659 iOS Development
   Semester: 2022B
   Assessment: Assignment 2
-  Author: Your name (e.g. Nguyen Van Minh)
-  ID: Your student id (e.g. 1234567)
-  Created  date: dd/mm/yyyy (e.g. 31/07/2022)
-  Last modified: dd/mm/yyyy (e.g. 05/08/2022)
+  Author: Luu Huynh Triet
+  ID: s3594528
+  Created  date: 17/08/2022
+  Last modified: 29/08/2022
   Acknowledgement: https://bicyclecards.com/how-to-play/old-maid/
  https://github.com/lcs-jliu/OldMaid/blob/master/OldMaid/main.swift
 */
