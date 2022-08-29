@@ -14,6 +14,10 @@ class OldMaidControl: ObservableObject {
         return function.players
     }
     
+    var discardedHands: [DiscardHand] {
+        return function.discardedHands
+    }
+    
     func select(_ card: CardDetails, in player: User) {
         function.select(card, in: player)
     }

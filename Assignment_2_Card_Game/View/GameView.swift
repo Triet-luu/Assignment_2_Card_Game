@@ -7,9 +7,8 @@
 
 import SwiftUI
 
-
-
 struct Interaction {
+    private(set) var discardedHands = [DiscardHand]()
     private(set) var players: [User]
     
     var playerdetails = [
@@ -61,12 +60,27 @@ struct Interaction {
         }
     }
     
+    mutating func playSelectedCard(of player: User) {
+        if let playerIndex = players.firstIndex(where: { $0.id == player.id }) {
+            var playerHand = players[playerIndex].cards.filter({ $0.selected == true})
+            let remainingCards = players[playerIndex].cards.filter({ $0.selected == false})
+            discardedHands.append(DiscardHand(hand: playerHand, handOwner: player))
+            players[playerIndex].cards = remainingCards
+        }
+    }
+    
     mutating func activePlayer(_ player: User) {
         if let playerIndex = players.firstIndex(where: { $0.id == player.id}) {
             players[playerIndex].activePlayer = true
             
             if !activePlayer.isPlayer {
                 let botHand = getBotHand(of: activePlayer)
+                if botHand.count > 0 {
+                    for i in 0...botHand.count - 1 {
+                        select(botHand[i], in: activePlayer)
+                    }
+                    playSelectedCard(of: activePlayer)
+                }
                 
             }
         }

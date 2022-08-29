@@ -27,6 +27,7 @@
 		EC76C60828AC988E004BE280 /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76C60728AC988E004BE280 /* HowToPlayView.swift */; };
 		EC95F8FF28BB37D400DF0C49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC95F8FE28BB37D400DF0C49 /* User.swift */; };
 		EC95F90128BB58C100DF0C49 /* OldMaidControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC95F90028BB58C100DF0C49 /* OldMaidControl.swift */; };
+		ECBC6D1528BCFA19001BD202 /* DiscardHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC6D1428BCFA19001BD202 /* DiscardHand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		EC76C60728AC988E004BE280 /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
 		EC95F8FE28BB37D400DF0C49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC95F90028BB58C100DF0C49 /* OldMaidControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldMaidControl.swift; sourceTree = "<group>"; };
+		ECBC6D1428BCFA19001BD202 /* DiscardHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscardHand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				EC61F90928B9D7C500825D47 /* Rank.swift */,
 				EC61F90B28B9D82A00825D47 /* Deck.swift */,
 				EC95F8FE28BB37D400DF0C49 /* User.swift */,
+				ECBC6D1428BCFA19001BD202 /* DiscardHand.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBC6D1528BCFA19001BD202 /* DiscardHand.swift in Sources */,
 				EC5CE55728AF7E5F000970A1 /* GameDetails.swift in Sources */,
 				EC76C60828AC988E004BE280 /* HowToPlayView.swift in Sources */,
 				EC95F90128BB58C100DF0C49 /* OldMaidControl.swift in Sources */,
