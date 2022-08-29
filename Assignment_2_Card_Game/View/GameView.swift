@@ -43,22 +43,22 @@ struct GameView: View {
     
     var oldmaid = OldMaidControl()
     
-    @State private var playerHand = [Int](repeating: 0, count: 27)
-    @State private var botHand: [Int] = [0, 1]
+//    @State private var playerHand = [Int](repeating: 0, count: 27)
+//    @State private var botHand: [Int] = [0, 1]
         
     var playerdetails = [
         Player(player: 1, username: "A", overallpoint: 0, currentpoint: 0),
         Player(player: 2, username: "B", overallpoint: 0, currentpoint: 0)
     ]
     
-    func drawCard() {
-        playerHand = playerHand.map({ _ in
-            Int.random(in: 0...53-1)
-        })
-        botHand = botHand.map({ _ in
-            Int.random(in: 0...53-1)
-        })
-    }
+//    func drawCard() {
+//        playerHand = playerHand.map({ _ in
+//            Int.random(in: 0...53-1)
+//        })
+//        botHand = botHand.map({ _ in
+//            Int.random(in: 0...53-1)
+//        })
+//    }
     
     var body: some View {
         ZStack {
@@ -93,8 +93,8 @@ struct GameView: View {
                             .foregroundColor(Color("green"))
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach (playerHand, id: \.self) { card in
-                                    CardView(cardName: cardsInformation[card].name)
+                                ForEach (player.cards) { card in
+                                    CardView(cardName: card.name)
                                 }
                             }
                         }
@@ -103,7 +103,7 @@ struct GameView: View {
                 Spacer()
             }
         }
-        .onAppear{drawCard()}
+        .onAppear{}
     }
 }
 
