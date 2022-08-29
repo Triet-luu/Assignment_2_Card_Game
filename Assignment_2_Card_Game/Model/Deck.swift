@@ -7,13 +7,14 @@
 
 import Foundation
 
+
 struct Deck {
-    private var cards = [CardDetails]()
+    private var cards = Stack()
     
     mutating func createDeck() {
         for suit in Suit.allCases {
             for rank in Rank.allCases {
-                cards.append(CardDetails(name: "", rank: rank, suit: suit))
+                cards.append(CardDetails(rank: rank, suit: suit))
             }
         }
     }

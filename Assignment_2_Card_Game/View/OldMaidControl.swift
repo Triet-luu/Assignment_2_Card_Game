@@ -13,4 +13,8 @@ class OldMaidControl {
     var players: [User] {
         return function.players
     }
+    
+    func select(_ card: CardDetails, in player: User) {
+        function.select(card, in: player)
+    }
 }

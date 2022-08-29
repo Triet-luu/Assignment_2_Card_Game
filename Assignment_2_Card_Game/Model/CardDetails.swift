@@ -11,11 +11,18 @@ import SwiftUI
 
 struct CardDetails: Identifiable {
     var id = UUID()
-    var name: String
+    
+    var rank: Rank
+    var suit: Suit
+    var selected = false
+    var name: String {
+        if "\(rank)" == "JOKER" || "\(rank)" == "BACK" {
+            return "\(rank)"
+        } else {
+            return "\(rank) \(suit)"
+        }
+    }
     var image: Image {
         Image(name)
     }
-    var rank: Rank
-    var suit: Suit
-    
 }

@@ -31,6 +31,14 @@ struct Interaction {
             }
         }
     }
+    
+    mutating func select(_ card: CardDetails, in player: User) {
+        if let cardIndex = player.cards.firstIndex(where: { $0.id == card.id}) {
+            if let playerIndex = players.firstIndex(where: { $0.id == player.id}) {
+                players[playerIndex].cards[cardIndex].selected.toggle()
+            }
+        }
+    }
 }
 
 var duelPlayers = [
@@ -72,14 +80,14 @@ struct GameView: View {
                         ScrollView(.horizontal) {
                             HStack {
                                 ForEach (player.cards) {
-                                    card in CardView(cardName: BACK)
+                                    card in CardView(cardName: "BACK")
                                 }
                             }
                         }
                     } else {
                         Spacer()
                         HStack {
-                            Image(BACK)
+                            Image("BACK")
                                 .resizable()
                                 .frame(width: 50, height: 70, alignment: .bottomLeading)
                                 .padding(5)
@@ -88,12 +96,13 @@ struct GameView: View {
                                 .padding(90)
                         }
                         Spacer()
+                        let me = oldmaid.players[0]
                         Text("Player \(playerdetails[0].player)")
                             .font(.system(size: 20))
                             .foregroundColor(Color("green"))
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach (player.cards) { card in
+                                ForEach (me.cards) { card in
                                     CardView(cardName: card.name)
                                 }
                             }
